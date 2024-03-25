@@ -1,6 +1,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<div align="center" class="bg-dark p-4"><img src="assets/img/pokemon.png" width="400px" height="140px"></div>
+<ng-template [ngIf] = "'home' === pagina">
+    <div align="center" class="bg-dark p-4"><img src="assets/img/pokemon.png" width="400px" height="140px"></div>
 <div class="bg-warning row" align="center">
     <div class="col p-2"><img src="assets/img/diamond.png" class="rounded" width="880px" height="400px"></div>
     <div class="col p-2" >
@@ -14,7 +15,7 @@
     <h1 class="starterTitle p-5">STARTER POKEMON</h1>
     <div class="col p-2">
         <div class="mt-2 ms-3 p-5 bg-success text-white rounded">
-            <button (click) = "TURTWIG($event)" type="button" class="btn btn-success btn-lg">
+            <button (click) = "onClickTurtwig($event)" type="button" class="btn btn-success btn-lg">
                 <p class="pokemonname1">TURTWIG</p>
                 <img height="400px" src="assets/img/turtwig.png">
             </button>
@@ -22,7 +23,7 @@
     </div>
     <div class="col p-2">
         <div class="mt-2 p-5 bg-warning text-white rounded">
-            <button type="button" class="btn btn-warning btn-lg">
+            <button (click) = "onClickChimchar($event)" type="button" class="btn btn-warning btn-lg">
                 <p class="pokemonname2">CHIMCHAR</p>
                 <img height="400px" src="assets/img/chimchar.png">
             </button>   
@@ -30,28 +31,27 @@
     </div>
     <div class="col p-2">
         <div class="mt-2 me-3 p-5 bg-info text-white rounded">
-            <button type="button" class="btn btn-info btn-lg">
+            <button (click) = "onClickPiplup($event)" type="button" class="btn btn-info btn-lg">
                 <p class="pokemonname3">PIPLUP</p>
                 <img height="400px" src="assets/img/piplup.png" >
             </button>
         </div>
     </div>
 </div>
+</ng-template>
+
 
 
 
 
 <ng-template [ngIf] = "'TURTWIG' === pagina">
 <div align="center" class="bg-dark p-4"><img src="assets/img/pokemon.png" width="400px" height="140px"></div>
-
 <div class="bg-dark row" align="center">
     <h1 class="starterTitle p-5">TURTWIG</h1>
     <div class="col p-2">
         <div class="mt-2 ms-3 p-5 bg-success text-white rounded">
-            <button type="button" class="btn btn-success btn-lg" (click)="TURTWIG($event)">
                 <p class="pokemonname1">TURTWIG</p>
                 <img height="400px" src="assets/img/turtwig.png">
-            </button>
         </div>
     </div>
     <div class="col p-2">
@@ -61,4 +61,45 @@
         </div>
     </div>
 </div>
+
+</ng-template>
+
+<ng-template [ngIf] = "'CHIMCHAR' === pagina">
+    <div align="center" class="bg-dark p-4"><img src="assets/img/pokemon.png" width="400px" height="140px"></div>
+    <div class="bg-dark row" align="center">
+        <h1 class="starterTitle p-5">CHIMCHAR</h1>
+        <div class="col p-2">
+            <div class="mt-2 p-5 bg-warning text-white rounded">
+                    <p class="pokemonname2">CHIMCHAR</p>
+                    <img height="400px" src="assets/img/chimchar.png">
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="mt-2 p-5 bg-info text-white rounded" align="center">
+                <h1 class="gametitle">CHIMCHAR</h1>
+                <p class="gameD">Questo gioco di pokemon si ambienta nella regione di Sinnoh</p>
+            </div>
+        </div>
+    </div>
+    
+</ng-template>
+
+<ng-template [ngIf] = "'PIPLUP' === pagina">
+    <div align="center" class="bg-dark p-4"><img src="assets/img/pokemon.png" width="400px" height="140px"></div>
+    <div class="bg-dark row" align="center">
+        <h1 class="starterTitle p-5">PIPLUP</h1>
+        <div class="col p-2">
+            <div class="mt-2 me-3 p-5 bg-info text-white rounded">
+                    <p class="pokemonname3">PIPLUP</p>
+                    <img height="400px" src="assets/img/piplup.png" >
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="mt-2 p-5 bg-info text-white rounded" align="center">
+                <h1 class="gametitle">PIPLUP</h1>
+                <p class="gameD">Questo gioco di pokemon si ambienta nella regione di Sinnoh</p>
+            </div>
+        </div>
+    </div>
+    
 </ng-template>

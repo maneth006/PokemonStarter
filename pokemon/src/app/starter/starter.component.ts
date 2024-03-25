@@ -15,6 +15,17 @@ export class StarterComponent {
   
   onClickTurtwig(event: MouseEvent){
     this.pagina = "TURTWIG";
+    console.log(event);
+  }
+
+  onClickChimchar(event: MouseEvent){
+    this.pagina = "CHIMCHAR";
+    console.log(event);
+  }
+
+  onClickPiplup(event: MouseEvent){
+    this.pagina = "PIPLUP";
+    console.log(event);
   }
 
   
