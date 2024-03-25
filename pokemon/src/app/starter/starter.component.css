@@ -1,0 +1,33 @@
+@font-face {
+    font-family: pokemonfont;
+    src: url("../../assets/font/PokemonSolid.ttf") format("truetype");
+}
+
+.gametitle{
+    font-family: pokemonfont;
+    color: yellow;
+}
+.gameD{
+    font-family: pokemonfont;
+}
+
+.pokemonname1{
+    font-family: pokemonfont;
+    color: rgb(4, 255, 46);
+}
+
+.pokemonname2{
+    font-family: pokemonfont;
+    color: rgb(255, 0, 0);
+}
+
+.pokemonname3{
+    font-family: pokemonfont;
+    color: rgb(0, 38, 255);
+}
+
+.starterTitle{
+    font-family: pokemonfont;
+    color: rgb(255, 238, 0);
+    font-size: 70px;
+}
