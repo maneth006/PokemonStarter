@@ -1,42 +1,62 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <ng-template [ngIf] = "'home' === pagina">
+<div>
     <div align="center" class="bg-dark p-4"><img src="assets/img/pokemon.png" width="400px" height="140px"></div>
-<div class="bg-warning row" align="center">
-    <div class="col p-2"><img src="assets/img/diamond.png" class="rounded" width="880px" height="400px"></div>
-    <div class="col p-2" >
-        <div class="mt-2 p-5 bg-info text-white rounded" align="center">
-            <h1 class="gametitle">POKEMON DIAMANTE LUCENTE</h1>
-            <p class="gameD">Questo gioco di pokemon si ambienta nella regione di Sinnoh</p>
+    <div class="bg-warning row" align="center">
+        <div class="col p-2"><img src="assets/img/diamond.png" class="rounded" width="800px" height="400px"></div>
+        <div class="col p-2">
+            <div class="mt-2 p-5 bg-info text-white rounded" align="center" width="400px" height="400px" >
+                <h1 class="gametitle">POKEMON DIAMANTE LUCENTE</h1>
+                <p class="gameD">
+                    Pokémon Diamante Lucente e Pokémon Perla Splendente
+                    <br>
+                    <br>
+                     sono ambientati nella regione di Sinnoh.
+                    <br>
+                    <br>
+                    Con la sua natura rigogliosa e l'imponente Monte Corona 
+                    <br>
+                    <br>
+                    a dominare il paesaggio,
+                    <br>
+                    <br>la regione di Sinnoh è una terra ricca di leggende 
+                    <br>
+                    <br>
+                    tramandate nel tempo.
+                </p>
+            </div>
         </div>
     </div>
-</div>
-<div class="bg-dark row" align="center">
-    <h1 class="starterTitle p-5">STARTER POKEMON</h1>
-    <div class="col p-2">
-        <div class="mt-2 ms-3 p-5 bg-success text-white rounded">
-            <button (click) = "onClickTurtwig($event)" type="button" class="btn btn-success btn-lg">
-                <p class="pokemonname1">TURTWIG</p>
-                <img height="400px" src="assets/img/turtwig.png">
-            </button>
+    <div>
+        <div class="bg-dark row" align="center">
+            <h1 class="starterTitle p-5">STARTER POKEMON</h1>
+            <div class="col p-2">
+                <div class="mt-2 ms-3 p-5 bg-success text-white rounded">
+                    <button (click) = "onClickTurtwig($event)" type="button" class="btn btn-success btn-lg">
+                        <p class="pokemonname1">TURTWIG</p>
+                        <img height="400px" src="assets/img/turtwig.png">
+                    </button>
+                </div>
+            </div>
+            <div class="col p-2">
+                <div class="mt-2 p-5 bg-warning text-white rounded">
+                    <button (click) = "onClickChimchar($event)" type="button" class="btn btn-warning btn-lg">
+                        <p class="pokemonname2">CHIMCHAR</p>
+                        <img height="400px" src="assets/img/chimchar.png">
+                    </button>   
+                </div>
+            </div>
+            <div class="col p-2">
+                <div class="mt-2 me-3 p-5 bg-info text-white rounded">
+                    <button (click) = "onClickPiplup($event)" type="button" class="btn btn-info btn-lg">
+                        <p class="pokemonname3">PIPLUP</p>
+                        <img height="400px" src="assets/img/piplup.png" >
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col p-2">
-        <div class="mt-2 p-5 bg-warning text-white rounded">
-            <button (click) = "onClickChimchar($event)" type="button" class="btn btn-warning btn-lg">
-                <p class="pokemonname2">CHIMCHAR</p>
-                <img height="400px" src="assets/img/chimchar.png">
-            </button>   
-        </div>
-    </div>
-    <div class="col p-2">
-        <div class="mt-2 me-3 p-5 bg-info text-white rounded">
-            <button (click) = "onClickPiplup($event)" type="button" class="btn btn-info btn-lg">
-                <p class="pokemonname3">PIPLUP</p>
-                <img height="400px" src="assets/img/piplup.png" >
-            </button>
-        </div>
-    </div>
+    </div>  
 </div>
 </ng-template>
 
@@ -67,15 +87,15 @@
             <div class="mt-2 p-5 bg-success text-white rounded row" width="400px">
                 <h1 class="gametitle">POKEDEX</h1>
                 <div class="col p-2">
-                    <p class="gameD">{{altezza1}}</p>
+                    <p class="gameD1">{{altezza1}}</p>
                     <br>
-                    <p class="gameD">{{peso1}}</p>
+                    <p class="gameD1">{{peso1}}</p>
                     <br>
-                    <p class="gameD">{{categoria1}}</p>
+                    <p class="gameD1">{{categoria1}}</p>
                     <br>
-                    <p class="gameD">{{abilita1}}</p>
+                    <p class="gameD1">{{abilita1}}</p>
                     <br>
-                    <p class="gameD">{{sesso1}}</p>
+                    <p class="gameD1">{{sesso1}}</p>
                 </div>
                 <div class="col p-2">
                     <table class="table table-bordered text-white">
@@ -120,7 +140,7 @@
                         </tbody>
                       </table>
                 </div>
-                <p class="gameD">
+                <p class="gameD1">
                     Turtwig nella regione di Sinnoh lo puoi trovare nel 
                     <br> 
                     <br> 
@@ -159,55 +179,55 @@
             <div class="mt-2 p-5 bg-warning text-white rounded row" width="400px">
                 <h1 class="gametitle">POKEDEX</h1>
                 <div class="col p-2">
-                    <p class="gameD2"><strong>Altezza: </strong> 0,5 m</p>
+                    <p class="gameD2">{{altezza2}}</p>
                     <br>
-                    <p class="gameD2"><strong>Peso: </strong> 6,2 kg</p>
+                    <p class="gameD2">{{peso2}}</p>
                     <br>
-                    <p class="gameD2"><strong>Categoria: </strong> Scimpanzé</p>
+                    <p class="gameD2">{{categoria2}}</p>
                     <br>
-                    <p class="gameD2"><strong>Abilità: </strong> Aiutofuoco</p>
+                    <p class="gameD2">{{abilita2}}</p>
                     <br>
-                    <p class="gameD2"><strong>Sesso: </strong> Maschio</p>
+                    <p class="gameD2">{{sesso2}}</p>
                 </div>
                 <div class="col p-2">
                     <table class="table table-bordered text-white">
                         <thead>
                            <tr>
-                            <th class="tablestats2">Stat</th>
-                            <th class="tablestats2">Base</th>
-                            <th class="tablestats2">Rank</th>
+                            <th class="tablestats2">{{stat}}</th>
+                            <th class="tablestats2">{{base}}</th>
+                            <th class="tablestats2">{{rank}}</th>
                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tablestats2">Punti Salute</td>
-                                <td class="tablestats2">44</td>
-                                <td class="tablestats2">13.1</td>
+                                <td class="tablestats2">{{PuntiSalute}}</td>
+                                <td class="tablestats2">{{PuntiSalutebase2}}</td>
+                                <td class="tablestats2">{{PuntiSaluteRank2}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats2">Attacco</td>
-                                <td class="tablestats2">58</td>
-                                <td class="tablestats2">26.9</td>
+                                <td class="tablestats2">{{Attacco}}</td>
+                                <td class="tablestats2">{{Attaccobase2}}</td>
+                                <td class="tablestats2">{{AttaccoRank2}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats2">Difesa</td>
-                                <td class="tablestats2">44</td>
-                                <td class="tablestats2">14.8</td>
+                                <td class="tablestats2">{{Difesa}}</td>
+                                <td class="tablestats2">{{Difesabase2}}</td>
+                                <td class="tablestats2">{{DifesaRank2}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats2">Attacco Speciale</td>
-                                <td class="tablestats2">58</td>
-                                <td class="tablestats2">37.6</td>
+                                <td class="tablestats2">{{AttaccoSpeciale}}</td>
+                                <td class="tablestats2">{{AttaccoSpecialebase2}}</td>
+                                <td class="tablestats2">{{AttaccoSpecialeRank2}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats2">Difesa Speciale</td>
-                                <td class="tablestats2">44</td>
-                                <td class="tablestats2">13.3</td>
+                                <td class="tablestats2">{{DifesaSpeciale}}</td>
+                                <td class="tablestats2">{{DifesaSpecialebase2}}</td>
+                                <td class="tablestats2">{{DifesaSpecialeRank2}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats2">Velocità</td>
-                                <td class="tablestats2">61</td>
-                                <td class="tablestats2">44.4</td>
+                                <td class="tablestats2">{{Velocita}}</td>
+                                <td class="tablestats2">{{Velocitabase2}}</td>
+                                <td class="tablestats2">{{VelocitaRank2}}</td>
                             </tr>
                         </tbody>
                       </table>
@@ -251,55 +271,55 @@
             <div class="mt-2 p-5 bg-info text-white rounded row" width="400px">
                 <h1 class="gametitle">POKEDEX</h1>
                 <div class="col p-2">
-                    <p class="gameD3"><strong>Altezza: </strong> 0,5 m</p>
+                    <p class="gameD3">{{altezza3}}</p>
                     <br>
-                    <p class="gameD3"><strong>Peso: </strong> 6,2 kg</p>
+                    <p class="gameD3">{{peso3}}</p>
                     <br>
-                    <p class="gameD3"><strong>Categoria: </strong> Scimpanzé</p>
+                    <p class="gameD3">{{categoria3}}</p>
                     <br>
-                    <p class="gameD3"><strong>Abilità: </strong> Aiutofuoco</p>
+                    <p class="gameD3">{{abilita3}}</p>
                     <br>
-                    <p class="gameD3"><strong>Sesso: </strong> Maschio</p>
+                    <p class="gameD3">{{sesso3}}</p>
                 </div>
                 <div class="col p-2">
                     <table class="table table-bordered text-white">
                         <thead>
                            <tr>
-                            <th class="tablestats3">Stat</th>
-                            <th class="tablestats3">Base</th>
-                            <th class="tablestats3">Rank</th>
+                            <th class="tablestats3">{{stat}}</th>
+                            <th class="tablestats3">{{base}}</th>
+                            <th class="tablestats3">{{rank}}</th>
                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tablestats3">Punti Salute</td>
-                                <td class="tablestats3">44</td>
-                                <td class="tablestats3">13.1</td>
+                                <td class="tablestats3">{{PuntiSalute}}</td>
+                                <td class="tablestats3">{{PuntiSalutebase3}}</td>
+                                <td class="tablestats3">{{PuntiSaluteRank3}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats3">Attacco</td>
-                                <td class="tablestats3">58</td>
-                                <td class="tablestats3">26.9</td>
+                                <td class="tablestats3">{{Attacco}}</td>
+                                <td class="tablestats3">{{Attaccobase3}}</td>
+                                <td class="tablestats3">{{AttaccoRank3}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats3">Difesa</td>
-                                <td class="tablestats3">44</td>
-                                <td class="tablestats3">14.8</td>
+                                <td class="tablestats3">{{Difesa}}</td>
+                                <td class="tablestats3">{{Difesabase3}}</td>
+                                <td class="tablestats3">{{DifesaRank3}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats3">Attacco Speciale</td>
-                                <td class="tablestats3">58</td>
-                                <td class="tablestats3">37.6</td>
+                                <td class="tablestats3">{{AttaccoSpeciale}}</td>
+                                <td class="tablestats3">{{AttaccoSpecialebase3}}</td>
+                                <td class="tablestats3">{{AttaccoSpecialeRank3}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats3">Difesa Speciale</td>
-                                <td class="tablestats3">44</td>
-                                <td class="tablestats3">13.3</td>
+                                <td class="tablestats3">{{DifesaSpeciale}}</td>
+                                <td class="tablestats3">{{DifesaSpecialebase3}}</td>
+                                <td class="tablestats3">{{DifesaSpecialeRank3}}</td>
                             </tr>
                             <tr>
-                                <td class="tablestats3">Velocità</td>
-                                <td class="tablestats3">61</td>
-                                <td class="tablestats3">44.4</td>
+                                <td class="tablestats3">{{Velocita}}</td>
+                                <td class="tablestats3">{{Velocitabase3}}</td>
+                                <td class="tablestats3">{{VelocitaRank3}}</td>
                             </tr>
                         </tbody>
                       </table>
