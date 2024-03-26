@@ -73,3 +73,22 @@
     color: rgb(255, 0, 0);
     font-size: 30px;
 }
+
+.tablestats3{
+    font-family: pokemonfont;
+    color: rgb(0, 38, 255);
+    background-color: rgb(0, 233, 250);
+    font-size: 20px;
+}
+
+.gameD3{
+    font-family: pokemonfont;
+    font-size: 30px;
+    color: rgb(0, 38, 255);
+}
+
+.homebtn3{
+    font-family: pokemonfont;
+    color: rgb(0, 38, 255);
+    font-size: 30px;
+}
