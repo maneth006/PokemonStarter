@@ -9,21 +9,26 @@
 }
 .gameD{
     font-family: pokemonfont;
+    font-size: 30px;
+    color: rgb(4, 255, 46);
 }
 
 .pokemonname1{
     font-family: pokemonfont;
     color: rgb(4, 255, 46);
+    font-size: 30px;
 }
 
 .pokemonname2{
     font-family: pokemonfont;
     color: rgb(255, 0, 0);
+    font-size: 30px;
 }
 
 .pokemonname3{
     font-family: pokemonfont;
     color: rgb(0, 38, 255);
+    font-size: 30px;
 }
 
 .starterTitle{
@@ -32,3 +37,39 @@
     font-size: 70px;
 }
 
+.homebtn{
+    font-family: pokemonfont;
+    color: rgb(255, 238, 0);
+    font-size: 30px;
+}
+
+.table{
+    font-family: pokemonfont;
+    color: rgb(4, 255, 46);
+}
+
+.tablestats{
+    font-family: pokemonfont;
+    color: rgb(4, 255, 46);
+    background-color: green;
+    font-size: 20px;
+}
+
+.tablestats2{
+    font-family: pokemonfont;
+    color: rgb(206, 2, 2);
+    background-color: rgb(218, 185, 0);
+    font-size: 20px;
+}
+
+.gameD2{
+    font-family: pokemonfont;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
+
+.homebtn2{
+    font-family: pokemonfont;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}

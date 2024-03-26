@@ -28,5 +28,9 @@ export class StarterComponent {
     console.log(event);
   }
 
+  onClickHome(event: MouseEvent){
+    this.pagina = "home";
+    console.log(event);
+  }
   
 }
